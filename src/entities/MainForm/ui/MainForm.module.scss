@@ -1,0 +1,291 @@
+.heading__form {
+    max-width: 1062px;
+    margin: 0 auto;
+    display: block;
+
+    border-radius: 0px 0px 40px 40px;
+
+    .form__сategories {
+        display: flex;
+        height: 54px;
+        border-radius: 10px 10px 0px 0px;
+        cursor: pointer;
+        height: 43px;
+        position: relative;
+        z-index: 0;
+
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+
+        width: auto;
+
+        @media (max-width: 1065px) {
+            width: 750px;
+
+        }
+
+        @media (max-width: 650px) {
+            width: 400px;
+
+        }
+
+        li {
+            display: block;
+            padding: 13px 20px;
+            gap: 10px;
+
+            width: 187px;
+            height: 54px;
+
+            background: rgba(45, 57, 136, 0.5);
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+            label+input[type="radio"] {
+                display: none;
+            }
+
+            @media (max-width: 1065px) {
+                display: none;
+            }
+
+            &:first-child {
+                width: (174px);
+                border-radius: 10px 0px 0px 0px;
+            }
+
+            &:nth-child(2) {
+                width: (187px);
+            }
+
+            &:nth-child(3) {
+                width: (133px);
+            }
+
+            &:nth-child(4) {
+                width: (148px);
+                border-radius: 0px 10px 0px 0px;
+            }
+
+            &.active {
+
+                background: #FFFFFF;
+                border-radius: 10px 10px 0px 0px;
+
+
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #664EF9;
+
+                @media (max-width: 1065px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .form__filters {
+        background-color: white;
+        min-height: 68px;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        border-radius: 0 10px 10px 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+
+        // width: auto;
+
+        &.Active {
+            border-radius: 0 10px 0 0;
+        }
+
+        @media (max-width: 1065px) {
+            // width: 750px;
+        }
+
+        @media (max-width: 650px) {
+            // width: 400px;
+        }
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+            width: min-content;
+        }
+
+
+        .filters__city,
+        .filters__rooms,
+        .filters__price,
+        .filters__moreOptions,
+        .filters__toMap,
+        .filters__submit {
+            height: 68px;
+            margin: 16px 0;
+            padding-right: 16px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            display: block;
+
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #BDBDBD;
+
+
+            label,
+            legend {
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+                // min-width: 150px;
+
+            }
+
+            &.filters__city,
+            &.filters__rooms,
+            &.filters__price {
+                width: 190px;
+                border-right: 1px solid rgb(102, 78, 249, 0.1);
+            }
+
+
+            &.filters__price {
+                width: 215px;
+
+                .price__legend {
+
+                    flex-direction: column;
+                    min-width: 150px;
+
+                    span {}
+
+                    .legend__inputs {
+                        margin: 0;
+                        padding: 0;
+                        height: 38px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 175px;
+
+                    }
+                }
+
+
+
+
+            }
+
+
+            &.filters__moreOptions,
+            &.filters__toMap {
+                padding: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    background: none;
+                    display: flex;
+                    gap: 5px;
+                    flex-wrap: nowrap;
+                    white-space: nowrap;
+
+
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+               
+
+                    color: #1E2123;
+                }
+            }
+
+            &.filters__moreOptions {
+                width: 160px;
+                border-right: 1px solid rgb(102, 78, 249, 0.1);
+
+                box-sizing: border-box;
+                position: relative;
+                height: 68px;
+
+                &.Active {
+                    &::after {
+                        width: 100%;
+                        height: 3px;
+                        background-color: #4E64F9;
+                        content: '';
+                        bottom: -16px;
+                        position: absolute;
+                    }
+
+                }
+
+
+            }
+
+            &.filters__toMap {
+                align-items: start;
+                width: 100px;
+                margin-left: 30px;
+            }
+
+            &.filters__submit {
+                width: 165px;
+
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 9px 16px;
+                    gap: 11px;
+                    margin: 0 auto;
+
+                    width: 123px;
+                    top: 344.5px;
+
+
+                    background: #FFD54F;
+                    border-radius: 22px;
+
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    /* identical to box height */
+
+
+                    color: #242424;
+
+
+                }
+            }
+
+
+
+
+
+
+        }
+    }
+}

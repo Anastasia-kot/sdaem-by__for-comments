@@ -1,0 +1,94 @@
+.Button {
+    height: 37px;
+    min-width: 110px;
+
+
+    text-align: center;
+
+    border-radius: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.Yellow {
+    background: rgba(255, 213, 79, 0.1);
+    color: #FEC100;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: rgba(255, 213, 79, 0.2);
+    }
+}
+
+.YellowBlack{
+         height: 48px;
+        box-sizing: border-box;
+    
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0px;
+        gap: 10px;
+        text-align: center;
+    
+    
+    
+    
+        /* #FFD54F */
+    
+        background: #FFD54F;
+        border-radius: 33px;
+    
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+    
+        color: #1E2123;
+    &:active,
+        &:focus,
+        &:hover {
+            background:#FEC100
+        }
+}
+
+.Violet {
+    height: 48px;
+    border-radius: 33px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+ 
+
+
+
+    font-size: 16px;
+    line-height: 24px;
+
+    background: #664EF9;
+    color: white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: #5C35F9;
+    }
+
+
+
+
+
+}

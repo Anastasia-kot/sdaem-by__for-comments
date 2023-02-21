@@ -1,0 +1,44 @@
+.new {
+    width: 100%;
+    background-color: white;
+
+
+    .new__alsoRead {
+        background: linear-gradient(90deg, rgb(148, 175, 255, 0.1) 0%, rgb(78, 100, 249, 0.1) 94.5%);
+        min-height: 737px;
+        width: 100%;
+
+        .alsoRead__content {
+            max-width: 1317px;
+
+
+            padding-top: 62px;
+            padding-left: 17px;
+            padding-right: 17px;
+            padding: 62px 17px;
+            margin: 0 auto;
+
+
+            .content__title {
+                margin-bottom: 45px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+
+                /* Style */
+
+                color: #1E2123;
+            }
+
+            .content__cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+    }
+}

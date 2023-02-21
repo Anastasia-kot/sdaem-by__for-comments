@@ -1,0 +1,126 @@
+.settings {
+    height: 80px;
+    margin-bottom: 61px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+
+    li:first-child.settings__item {
+
+        form {
+            position: relative;
+
+            &:hover,
+            &:focus,
+            &:active {
+                svg {
+                    fill: #664EF9
+                }
+            }
+
+            svg {
+                position: absolute;
+                top: 9px;
+                left: 12px;
+                z-index: 2;
+            }
+
+            div {
+                select {
+                    color: #1E2123;
+                    padding: 0px 38px;
+                    background-color: #FFFFFF;
+                    z-index: 1;
+                    position: relative;
+                    box-shadow: 0px 5px 20px rgba(0, 96, 206, 0.1);
+                }
+            }
+
+
+        }
+
+
+    }
+
+    li:last-child.settings__item {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 480px;
+        justify-content: space-between;
+
+
+        .item__viewMode {
+            display: flex;
+            justify-content: space-between;
+            width: 235px;
+        }
+
+        .viewMode__radio,
+        .item__button {
+            display: flex;
+            position: relative;
+
+            height: 37px;
+
+            border-radius: 18px;
+            padding: 10px 15px;
+            box-shadow: 0px 5px 20px rgba(0, 96, 206, 0.1);
+            background: #FFFFFF;
+
+
+            svg {
+                position: absolute;
+            }
+
+            &:hover {
+                background: #F8F8F8;
+            }
+        }
+
+        .viewMode__radio {
+            width: 106px;
+            margin-right: 20px;
+
+            input {
+
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+
+            }
+
+            label {
+                padding-left: 25px;
+                margin-top: -1px;
+
+
+            }
+
+
+        }
+
+        .item__button {
+
+            width: 180px;
+            padding: 0px;
+            padding-left: 36px;
+            padding-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+
+
+            svg {
+                top: 11px;
+                left: 15px;
+            }
+
+
+        }
+
+    }
+}

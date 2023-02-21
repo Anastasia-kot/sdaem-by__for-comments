@@ -1,0 +1,172 @@
+ .Label {
+     margin: 0;
+     padding: 0;
+
+
+     span {}
+
+     .InputWrapper {
+         position: relative;
+         margin: 0;
+         padding: 0;
+
+         .SvgImage {
+
+             position: absolute;
+             top: 15px;
+             left: 15px;
+
+             svg,
+             path {
+                 fill: #686868;
+             }
+
+             &:hover {
+
+                 svg,
+                 path {
+                     fill: #664EF9;
+                 }
+             }
+         }
+
+         .Input,
+         .Textarea {
+
+
+             box-sizing: border-box;
+             margin: 0;
+             padding: 15px 20px;
+             border-radius: 30px;
+
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             line-height: 17px;
+
+
+             background: #F8F8F8;
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             line-height: 17px;
+             color: #686868;
+             border: 2px solid rgb(0, 255, 255, 0);
+             outline: none;
+
+
+         }
+
+
+         .Input:focus,
+         .Input:hover,
+         .Input:active,
+
+         .Textarea:focus,
+         .Textarea:hover,
+         .Textarea:active {
+             background: #FFFFFF;
+             border: 2px solid rgba(102, 78, 249, 0.8);
+             color: #1E2123;
+         }
+
+
+         .Input:focus+.SvgImage,
+         .Input:hover+.SvgImage,
+         .Input:active+.SvgImage {
+
+
+
+             svg,
+             path {
+                 fill: #664EF9;
+             }
+
+         }
+
+
+
+
+
+
+
+         //убрать стрелочки  input[type="number"]
+
+         // Chrome
+         input[type="number"]::-webkit-outer-spin-button,
+         input[type="number"]::-webkit-inner-spin-button {
+             -webkit-appearance: none;
+             margin: 0;
+         }
+
+         //Firefox
+         input[type="number"] {
+             -moz-appearance: textfield;
+         }
+
+         input[type="number"]:hover,
+         input[type="number"]:focus {
+             -moz-appearance: number-input;
+         }
+
+         //Для других
+         input[type=number]::-webkit-inner-spin-button,
+         input[type=number]::-webkit-outer-spin-button {
+             -webkit-appearance: none;
+             margin: 0;
+         }
+
+
+         .ErrorSvg {
+             position: absolute;
+             right: 15px;
+             top: 13px;
+
+         }
+
+         .ErrorMessage {
+             display: none;
+         }
+.SvgImage:hover ~.ErrorMessage,
+            .Input:focus ~ .ErrorMessage ,
+            .Input:hover ~ .ErrorMessage ,
+            .Input:active ~ .ErrorMessage,
+            
+            .ErrorSvg:hover~.ErrorMessage{
+
+             display: block;
+             position: absolute;
+             z-index: 1;
+             top: 5px;
+             right: -160px;
+             min-width: 150px;
+             width: min-content;
+             height: auto;
+
+
+             box-sizing: border-box;
+             margin: 0;
+             padding: 15px 20px;
+             border-radius: 15px;
+
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             line-height: 17px;
+
+
+             background: #F8F8F8;
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             line-height: 17px;
+             color: #686868;
+             border: 2px solid rgb(0, 255, 255, 0);
+             outline: none;
+         }
+     }
+ }

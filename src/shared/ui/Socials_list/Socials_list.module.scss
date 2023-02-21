@@ -1,0 +1,23 @@
+ .socials {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 240px;
+
+     .socials__item {
+         height: 34px;
+         width: 34px;
+         border-radius: 19px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         &:hover {
+             svg {
+                 filter: opacity(60%)
+             }
+         }
+
+
+     }
+ }

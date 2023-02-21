@@ -1,0 +1,39 @@
+.map_search {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 14px;
+    position: relative;
+
+    @media (max-width: 1050px) {
+        margin-bottom: 40px;
+    }
+
+
+
+    .map_search__preference_list {
+        position: relative;
+        top: -123px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto;
+        padding-left: 13px;
+
+        @media (max-width: 768px) {
+        padding-left: 0px;
+        width: 95%;        
+    }
+    }
+
+    .map_search__dotes {
+        position: absolute;
+        bottom: -40px;
+        right: 145px;
+
+        @media (max-width: 1050px) {
+            display: none;
+        }
+    }
+
+}

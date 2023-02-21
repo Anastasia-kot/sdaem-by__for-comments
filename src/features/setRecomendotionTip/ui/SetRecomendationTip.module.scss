@@ -1,0 +1,15 @@
+.recommendations {
+
+    .recommendations__title {
+        padding-top: 10px;
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .recommendations__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}

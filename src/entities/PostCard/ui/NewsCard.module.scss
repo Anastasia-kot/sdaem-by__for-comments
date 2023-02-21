@@ -1,0 +1,106 @@
+.card {
+    max-width: 406px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(0px 20px 40px rgba(135, 124, 202, 0.15));
+
+
+    display: grid;
+    grid-template-rows: 257px 52px 109px 1fr;
+    align-items: flex-start;
+
+        font-family: 'Inter', 'sans-serif';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+    .card__image {
+        width: 100%;
+        height: auto;
+        // width: 406px;
+        // height: 227px;
+        border-radius: 10px;
+    }
+
+
+    .card__title,
+    .card__description{
+        padding: 0 20px;
+        overflow: hidden;
+        
+
+            display: -webkit-box;  /* Включаем флексбоксы */
+            -webkit-box-orient: vertical;  /* Вертикальная ориентация */
+                -webkit-line-clamp: 2;   /* Число отображаемых строк */
+               
+    }
+
+    .card__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1E2123;
+ 
+
+                -webkit-line-clamp: 2; /* Число отображаемых строк */
+      }
+
+    .card__description {
+        font-weight: 400;
+        
+        color: #686868;
+
+                -webkit-line-clamp: 5; /* Число отображаемых строк */
+    }
+
+    .card__footer {
+        border-top: 2px solid #F8F8F8;
+        padding-top: 19px;
+        height: 100%; 
+        margin: 0 20px;
+ 
+ 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+
+
+        .footer__date {
+            padding: 11px 8px;
+            text-align: center;
+
+
+            background: #F8F8F8;
+            border-radius: 18px;
+
+            font-weight: 500;
+            color: #8291A3;
+        }
+
+        .footer__button {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 15px;
+ 
+
+
+            background: rgba(102, 78, 249, 0.1);
+            border-radius: 17px;
+
+
+           
+            font-weight: 700;
+            color: #664EF9;
+
+            &:hover{
+                background: rgba(102, 78, 249, 0.2);
+
+            }
+        }
+
+    }
+}

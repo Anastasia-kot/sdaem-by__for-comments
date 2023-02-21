@@ -1,0 +1,58 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    height: 33px;
+    border-radius: 22px;
+    padding: 9px;
+
+
+    background: rgba(235, 87, 87, 0.1);
+    transform: rotate(0.25deg);
+
+    &.main{
+        display: none;
+    }
+
+    &.list{
+     margin-right:   310px;
+     display: flex;
+    order:1
+    }
+
+    &.tile{
+        margin-right:0;
+        display: block;
+        order:0
+    }
+  
+
+    .button__text {
+        font-weight: 600;
+        color: #EB5757;
+    }
+
+    &:hover {
+        svg {
+            fill: #EB5757;
+            fill-opacity: 0.4
+        }
+    }
+
+    &:active {
+        svg {
+            fill: #EB5757;
+            fill-opacity: 0.6
+        }
+    }
+
+    &.liked {
+        svg {
+            fill: #EB5757;
+            fill-opacity: 1;
+        }
+    }
+
+}

@@ -1,0 +1,103 @@
+.menu {
+    margin-top: 1px;
+    width: 297px;
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    gap: 30px;
+
+
+    .menu__list {
+        width: 297px;
+
+        .list__title {
+            margin-bottom: 15px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+
+            cursor: pointer;
+        }
+
+        .list__list {
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FEB700;
+
+
+                span {
+                    cursor: pointer;
+
+                    &:nth-of-type(1) {
+                        &:hover {
+                            transform: translate(30px, 0);
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #BDBDBD;
+                    }
+                }
+            }
+
+        }
+
+        &:nth-child(2) {
+            ul {
+                li:last-child {
+                    width: 41px;
+                    align-items: center;
+                    margin-top: 10px;
+                    border-bottom: 1px solid #FEB700;
+                    padding-bottom: 1px;
+                    padding-top: 5px;
+
+                    &:hover {
+                        transform: translate(30px, 0);
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+    @media (max-width: 1439px) {
+
+
+
+        width: 100%;
+        justify-content: space-around;
+
+        .categories__list {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+}
