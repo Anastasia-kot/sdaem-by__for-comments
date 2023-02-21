@@ -1,0 +1,21 @@
+.sharing {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    min-width: 344px;
+    height: 34.15px;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .sharing__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        color: #686868;
+    }
+}

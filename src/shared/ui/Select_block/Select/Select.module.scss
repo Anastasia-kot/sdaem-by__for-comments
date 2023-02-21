@@ -1,0 +1,78 @@
+.select {
+
+   
+
+    display: inline-block;
+    height: 37px;
+    width: 150px;
+    padding: 0 12px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+    border: 2px solid rgba(102, 78, 249, 0);
+    outline: none;
+
+
+
+    // color: #1E2123;
+    color: #686868;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    // ARROW 
+    /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add custom arrow */
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1.75L6 6.25L10.5 1.75' stroke='%23664EF9' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+
+    &::-ms-expand {
+        display: none;
+        /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+    }
+
+    /* Target Internet Explorer 9 to undo the custom arrow */
+    @media screen and (min-width:0\0) {
+        background: none\9;
+        padding: 5px\9;
+    }
+
+
+
+
+
+
+
+
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1.75L6 6.25L10.5 1.75' stroke='%23664EF9' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px top 50%;
+    }
+
+
+    &:hover {
+        background-color: rgba(102, 78, 249, 0.1);
+    }
+
+    &:focus,
+    &:active {
+        background-color: #ffffff;
+        border: 2px solid rgba(102, 78, 249, 0.8);
+        filter: drop-shadow(0px 5px 15px rgba(135, 124, 202, 0.25));
+    }
+
+
+}

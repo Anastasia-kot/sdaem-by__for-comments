@@ -1,0 +1,129 @@
+.main {
+    // width: 100%;
+    // max-width: 1040px;
+    // min-height: 599px;
+    // padding: 176px 189px;
+
+    // @media (max-width: 864px) {
+    //     padding: 106px 89px;
+    // }
+    // @media (max-width: 392px) {
+    //     padding: 76px 19px;
+    // }
+
+
+    .main__lead {
+        width: 100%;
+        min-height: 430px;
+        box-sizing: border-box;
+        background-color: white;
+        margin-bottom: 84px;
+
+
+        font-family: 'Inter';
+        font-style: normal;
+
+        .lead__content {
+            width: 100%;
+            max-width: 1283px;
+
+            height: 100%;
+            min-height: 430px;
+            box-sizing: border-box;
+
+            padding-left: 80px;
+            padding-right: 63px;
+            padding-bottom: 118px;
+
+
+
+            margin: 0 auto;
+            border-radius: 0px 0px 40px 40px;
+
+            @media (max-width: 1200px) {}
+
+            @media (max-width: 520px) {
+                padding: 0 20px;
+            }
+
+            background-repeat: no-repeat;
+            background-position:cover;
+            background-color: #6d7ad2;
+            background-image: 
+                url(../../../../public/images/404/city-map.png),
+                url(../../../../public/images/404/background.png);
+
+
+
+            .lead__title {
+                padding: 0;
+                padding-top: 83px;
+                margin: 0;
+                margin-bottom: 50px;
+                text-align: center;
+
+
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+
+                color: #FFFFFF;
+
+                text-shadow: 0px 2px 5px rgba(0, 14, 142, 0.3);
+
+                .yellow {
+                    color: #FFD54F
+                }
+
+            }
+        }
+    }
+
+    .categories {
+        background-color: white;
+        width: 100%;
+        padding: 0;
+        padding-left: 80px;
+        padding-right: 63px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        margin-bottom: 38px;
+
+
+
+    }
+
+    @media (max-width: 1100px) {
+        .categories {
+            padding: 0 20px;
+        }
+    }
+
+    .about {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 29px;
+
+        padding: 0;
+        padding-left: 80px;
+        padding-right: 63px;
+        margin-bottom: 100px;
+
+        background-color: rgb(255, 255, 255);
+
+        font-family: 'Inter';
+        font-style: normal;
+
+        @media (max-width: 768px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

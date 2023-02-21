@@ -1,0 +1,38 @@
+.form {
+    width: 400px;
+    display: flex;
+    gap: 30px;
+
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .form__container {
+        position: relative;
+
+        svg {
+            position: absolute;
+            bottom: 14px;
+            // top: 14px;
+            left: 14px;
+            z-index: 2;
+        }
+
+        div:hover+svg,
+        div:active+svg,
+        div:focus+svg {
+            fill: #664EF9
+        }
+    }
+
+select {
+    background-color: #FFFFFF;
+}
+
+div:nth-of-type(1) {
+    select {
+        padding: 0px 38px;
+    }
+}
+}
+
+

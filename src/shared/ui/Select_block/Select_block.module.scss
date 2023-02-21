@@ -1,0 +1,26 @@
+.SelectBlock {
+    position: relative;
+
+    display: grid;
+    align-items: center;
+    gap: 11px;
+
+    margin: 0;
+    padding: 0;
+
+
+
+
+    .LabelSelect {
+        margin-right: 10px;
+
+        color: #BDBDBD;
+        // color: #664EF9;
+        font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+    }
+ 
+}

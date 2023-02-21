@@ -1,0 +1,127 @@
+  .registration {
+    width: 100%;
+    min-height: 930px;
+    background-image: 
+        url(../../../../public/images/404/city-map.png), 
+        url(../../../../public/images/404/background.png);
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 17px;
+
+
+    .register {
+            min-height: 581px;
+            max-height: 654px;
+            min-width: 844px;
+    
+    
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0px 20px 40px rgba(39, 95, 158, 0.2);
+            background: #FFFEFE;
+    
+    
+            display: grid;
+            grid-template-rows: 10px 1fr;
+            grid-template-columns: 306px 388px;
+            gap: 50px;
+    
+    
+            font-family: 'Inter';
+            font-style: normal;
+    
+            .register__title {
+                grid-column: 1/2;
+                text-align: center;
+    
+    
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+    
+                color: #000000;
+            }
+    
+            .register__form {
+                grid-column: 1/2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                input[type="text"],
+                input[type="password"] {
+                    box-sizing: border-box;
+                    width: 306px;
+                    height: 50px;
+    
+                    border-radius: 30px;
+                    padding: 15px 20px;
+                    padding-left: 55px;
+    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+    
+    
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #1E2123;
+                }
+            }
+    
+            .register__description {
+                grid-column: 2/3;
+                max-width: 388px;
+    
+    
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #686868;
+    
+                .description__title {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+    
+                .description__list {
+                    margin-bottom: 72px;
+    
+                    .list__item {
+                        text-indent: 12px;
+                        position: relative;
+    
+                        &::before {
+                            position: absolute;
+                            top: 10px;
+                            left: 1px;
+                            content: '';
+                            height: 5.5px;
+                            width: 5.5px;
+    
+                            border-radius: 50%;
+                            background: #686868;
+                        }
+                    }
+                }
+    
+                .description__auth {
+                    span {
+                        margin-right: 4px;
+                    }
+    
+                    a {
+                        color: #664EF9;
+                    }
+                }
+            }
+        }
+}
+

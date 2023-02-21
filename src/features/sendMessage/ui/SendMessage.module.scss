@@ -1,0 +1,184 @@
+.form {
+    width: 625px;
+    height: 516px;
+    padding: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 115px 1fr 53px;
+
+
+    background: #FFFEFE;
+    box-shadow: 0px 20px 40px rgba(39, 95, 158, 0.2);
+    border-radius: 10px;
+
+    label {
+
+        &:first-of-type,
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+
+            /* Style */
+
+            color: #686868;
+
+        }
+
+        &:first-of-type {
+            margin-right: 28px;
+        }
+
+        &:nth-of-type(3) {
+            grid-column: 1/3;
+        }
+    }
+
+    .SubmitButtonWrapper {
+        margin: 0 auto;
+        grid-column: 1/3;
+
+    }
+
+
+    .form__modal_background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 1038px;
+        height: 100%;
+        background: rgba(46, 46, 46, 0.7);
+        z-index: 1;
+
+        .form__modal {
+            height: 313px;
+            width: 406px;
+
+            border-radius: 10px;
+            position: absolute;
+            left: 35.9%;
+            right: 35.9%;
+            top: 27.46%;
+            bottom: 42.39%;
+            z-index: 1;
+
+            background: #FFFEFE;
+            box-shadow: 0px 20px 40px rgba(39, 95, 158, 0.2);
+            border-radius: 10px;
+
+            text-align: center;
+            padding: 50px;
+
+
+            .modal__title,
+            .modal__subtitle {
+                font-family: 'Inter';
+                font-style: normal;
+                text-align: center;
+            }
+
+            .modal__title {
+                margin-bottom: 20px;
+
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                color: #000000;
+            }
+
+            .modal__subtitle {
+                margin-bottom: 30px;
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #686868;
+            }
+
+            button {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 12px 24px;
+                gap: 10px;
+                margin: 0 auto;
+
+                width: 161px;
+                height: 48px;
+
+
+                background: #FFD54F;
+                border-radius: 33px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #1E2123;
+            }
+
+        }
+    }
+
+
+
+    @media (max-width: 1300px) {
+
+        margin: 0 auto;
+        max-width: 100%;
+        grid-template-columns: 1/2;
+
+
+
+    }
+
+
+
+    @media (max-width: 864px) {
+
+
+
+
+        width: 100%;
+        height: auto;
+        padding: 5%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 115px 115px 258px 53px;
+
+        label {
+
+
+            &:first-of-type {
+                margin-right: 0px;
+            }
+
+            &:nth-of-type(3) {
+                grid-column: 1/2;
+            }
+        }
+
+        .SubmitButtonWrapper {
+            grid-column: 1/2;
+
+        }
+
+    }
+
+
+}
